@@ -17,7 +17,8 @@ interface tokenRecipient { function receiveApproval(address _from, uint256 _valu
             owner = newOwner;
         }
     }
-contract TokenERC20 {
+contract TokenERC20 {    contract MyToken is owned {
+        /* the rest of the contract as usual */
     // Public variables of the token
     string public name;
     string public symbol;
